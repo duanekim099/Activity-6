@@ -1,0 +1,39 @@
+body {
+    background: slateblue;
+    font-size: 7vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.flex-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    background-color: orange;
+    padding: 10px; 
+}
+
+.flex-item {
+    background-color: #3498db; 
+    padding: 10px; 
+    margin: 30px; 
+    color: whitesmoke;
+    border-radius: 5px; 
+    border: 2px solid;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        background-color: rgb(148, 151, 181);
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: flex-start;
+    }
+
+    .flex-item { 
+        flex: 0 1 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+}
